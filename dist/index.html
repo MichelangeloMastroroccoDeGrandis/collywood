@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+   
+    <title>Collywood</title>
+    
+</head>
+<body>
+    
+    <header class="bg-orange">
+        <nav class="navbar navbar-expand-lg navbar-dark flex-column flex-xl-row">
+            
+                <img src="./asset/png/logo.png" alt="logo collywood" width="100" class="d-block mx-auto">
+                <!-- Toggle Mobile -->
+                    
+                        <button class="navbar-toggler my-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon mx-auto"></span>
+                        </button> 
+                   
+                    
+                
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                  
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mappa</a>
+                        </li>
+                  
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cucina</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Eventi</a>
+                        </li>
+                  
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Direzioni</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+ <!-- Banner -->
+ <div class="banner">
+        
+    <div class="row">
+        <div class="col-12 d-flex flex-column align-items-center align-self-center">
+            <h1>Collywood</h1>
+        </div>
+    </div>    
+
+</div>
+    <div class="container-fluid">
+   
+    
+    <div class="divider"></div>
+    
+    <!-- About -->
+    
+        <div class="row move-down">
+            <div class="col-12 col-xl-6">
+                <div class="section section-a">
+                    <h2>Cosa è Collywood</h2>
+                    <p>Collywood è lo spazio dove si sta insieme, si ascolta, si danza, si guarda, si beve e si mangia. Vieni a fare le tue cose preferite in mezzo alla natura, dalla mattina alla sera!</p>                                               
+                </div>
+            </div> 
+            <div class="col-12 section-a-img">
+                <img src="/dist/asset/png/caravan.png" alt="" class="img-fluid">
+            </div> 
+             
+        </div>
+    
+
+    <div class="divider"></div>
+    
+    <!-- Mappa -->
+    
+        <div class="row">
+            <div class="col-12">
+                <div class="section section-b">
+                    <a href="#" class="btn btn-primary d-block d-xl-none mx-auto">visita la galleria</a>
+                </div>
+                <div>
+                    <iframe src="/dist/asset/svg/map.svg" width="80%" height="600" class="img-fluid d-none d-xl-block">
+                        Your browser does not support iframes.
+                    </iframe>
+                 </div>
+            </div>
+        </div>
+    
+
+    <div class="divider"></div>
+    
+    <!-- Cucina -->
+    
+        <div class="row">
+            <div class="col-12">
+                <div class="section section-c">
+                    <h2>La Nostra Cucina</h2>
+                    <p>Siamo attivi dalla mattina alla sera, quindi colazione al sole con centrifugati freschi, pranzetti bucolici a base di crescentine farcite, griglia per carne, pesce e verdure e cenette al chiaro di luna. Il tutto accompagnato felicemente dal cocktail che più si addice all’orario della giornata. Il menù è variabile a seconda della proposta del cuoco: la griglia è sempre calda e il panorama fa da contorno.</p>     
+                    <a href="#" class="btn btn-primary">Scarica Menu</a>                                        
+                </div>    
+            </div>
+        </div>
+   
+
+    <div class="divider"></div>
+    
+    <!-- Eventi -->
+    
+        <div class="row">
+            
+            <div class="col-12">
+                <p class="lead">Abbiamo un vasto programma per l'estate bolognese sui colli</p>
+            </div>
+        </div>
+        <div class="white-space"></div>
+            <div class="row section section-d">
+                <div class="col-12 col-xl-4">
+                    <div class="box box-a">
+                        <h2>Musica</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4">
+                    <div class="box box-b">
+                        <h2>Teatro</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4">
+                    <div class="box box-c">
+                        <h2>Cinema</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="white-space"></div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="lead">Sei un artista in cerca di uno spazio? Scrivici <a href="#">qui</a></p>
+                </div>
+            </div>
+        </div>
+    
+    <div class="divider"></div>
+    
+    <!-- Direzioni -->
+    
+        <div class="row flex-column flex-xl-row flex-xl-row-reverse">
+            <div class="col-12 col-xl-6">
+                <div>
+                    <div id="googleMap" style="width:100%;height:400px;"></div>
+                    
+                </div> 
+                <a href="#" class="btn btn-primary">copia indirizzo</a>   
+            </div>
+            <div class="col-12 col-xl-6">
+                <h2>Come Raggiungerci</h2>
+                <div>
+                    <i class=""></i>  
+                    <p>Siamo in via dei Colli 54 a Bologna, all'incrocio tra via dei Colli, via di Sabbiuno e via Cavaioni. Il parcheggio è in via di Sabbiuno a metà della salita sulla destra, un grande prato verde.</p>
+                </div>
+                <div>
+                    <i class=""></i>  
+                    <p>Con l'autobus 52 che parte da piazza Cavour, scendendo alla fermata "Cavaioni" sei da noi in 25 minuti. <a href="https://www.tper.it/bo-52">Qui gli orari</a></p>
+                </div>
+            </div>
+        </div>
+    
+</div>
+
+
+    <footer class="bg-orange">
+        <div class="row">
+            <div class="col-12">
+                <p>Footer</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="/dist/js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4XGb7p4CCDuKncTeUU4SF91beZH215Y0&callback=myMap"></script>
+</body>
+</html>
