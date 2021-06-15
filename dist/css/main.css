@@ -1,3 +1,13 @@
+.car, .bus {
+  width: 250px;
+  height: 200px; }
+
+.car {
+  background: url("/dist/asset/png/car.png") center/cover no-repeat; }
+
+.bus {
+  background: url("/dist/asset/png/bus.png") center/cover no-repeat; }
+
 .bg-orange {
   background-color: #F8A82D; }
 
@@ -38,6 +48,11 @@ p {
 
 .white-space {
   height: 100px; }
+
+.navbar-collapse {
+  width: 100%; }
+  .navbar-collapse a {
+    text-align: center; }
 
 .banner {
   background: url(/dist/asset/jpg/banner.jpg);

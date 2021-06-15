@@ -1,5 +1,18 @@
 // Assets
 $bg-img: url('/dist/asset/jpg/banner.jpg');
+$bus: url('/dist/asset/png/bus.png');
+$car: url('/dist/asset/png/car.png');
+.car, .bus {
+    width: 250px;
+    height: 200px;
+}
+.car {
+    background: $car center/cover no-repeat;
+}
+
+.bus {
+    background: $bus center/cover no-repeat;
+}
 
 //colors
 $orange: #F8A82D;
@@ -58,6 +71,15 @@ p {
 
 .white-space {
     height: 100px;
+}
+
+//Menu
+.navbar-collapse {
+    width: 100%;
+
+    a {
+        text-align: center;
+    }
 }
 
 //banner
@@ -120,6 +142,7 @@ p {
     &-d {
         .box {
             height: 300px;
+            
             &-a {
                 background-color: $orange;
             }
