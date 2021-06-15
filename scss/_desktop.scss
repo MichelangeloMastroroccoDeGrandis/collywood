@@ -1,0 +1,51 @@
+@media screen and (min-width: 992px)  {
+
+    .navbar{
+        max-height: 100px;
+        
+        .logo {
+            transform: translateY(20px);
+        }
+    }
+    
+    .banner {
+        background-position: bottom;
+    }
+
+    .section {
+        &-c {
+            max-width: 50%;
+            margin: 3em auto;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+
+    
+    .banner {
+        height: 70vh;
+        background-position: center;
+    }
+
+    .section {
+        &-a {
+            &-img {
+                transform: translate(-40%, 0);
+            }
+        }
+    }
+
+    .bg-cucina {
+        min-height: 800px;
+        padding-top: 0;
+        &-inner {
+            background: $bg-cucina;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center top;
+            background-attachment: fixed;
+        }
+    }
+}

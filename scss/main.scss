@@ -1,17 +1,66 @@
 // Assets
+$home: url('/dist/asset/png/home.png');
+$about: url('/dist/asset/png/about.png');
+$cucina: url('/dist/asset/png/cucina.png');
+$direzione: url('/dist/asset/png/direzione.png');
+$eventi: url('/dist/asset/png/eventi.png');
+$mappa: url('/dist/asset/png/mappa.png');
+
+.home, .about, .mappa, .cucina, .eventi, .direzione {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.home {
+    background: $home center/contain;
+}
+.about {
+    background: $about center/contain;
+}
+.mappa {
+    background: $mappa center/contain;
+}
+.cucina {
+    background: $cucina center/contain;
+}
+.eventi {
+    background: $eventi center/contain;
+}
+.direzione {
+    background: $direzione center/contain;
+}
+
 $bg-img: url('/dist/asset/jpg/banner.jpg');
+$bg-cucina: url('/dist/asset/jpg/cucina.jpg');
+$bg-cucina-mobile: url('/dist/asset/jpg/cucina-mobile.jpg');
 $bus: url('/dist/asset/png/bus.png');
 $car: url('/dist/asset/png/car.png');
+
 .car, .bus {
     width: 250px;
     height: 200px;
 }
+
 .car {
-    background: $car center/cover no-repeat;
+    background: $car center/contain no-repeat;
 }
 
 .bus {
-    background: $bus center/cover no-repeat;
+    background: $bus center/contain no-repeat;
+}
+
+.bg-cucina {
+    position: relative;
+    padding-top: 25%;
+
+    &-inner {
+        background: $bg-cucina-mobile;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center top;
+        background-attachment: fixed;
+    }
+    
 }
 
 //colors
@@ -20,10 +69,13 @@ $straw: #EEE1C8;
 $light-blue: #39F7E4;
 $dark-blue: #202AF7;
 
+//variables
+$max-width: 1400px;
 
 //utilities
 .bg-orange {
     background-color: $orange;
+    padding: 1em 3em;
 }
 
 .divider {
@@ -74,11 +126,22 @@ p {
 }
 
 //Menu
-.navbar-collapse {
-    width: 100%;
 
-    a {
-        text-align: center;
+.navbar {
+    position: relative;
+    max-width: $max-width;
+    margin: auto;
+
+    .logo {
+        transform: translateY(0px);
+    }
+
+    &-collapse {
+        width: 100%;
+        
+        a {
+            text-align: center;
+        }
     }
 }
 
@@ -127,8 +190,10 @@ p {
     }
 
     &-c {
+        
         background-color: $dark-blue;
         padding: 1.5em;
+        margin-bottom: 7.5em;
 
         p {
             margin-bottom: 2em;
@@ -155,3 +220,6 @@ p {
         }
     }
 }
+
+//Import
+@import "desktop";

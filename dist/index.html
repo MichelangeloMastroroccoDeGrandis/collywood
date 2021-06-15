@@ -14,9 +14,10 @@
 <body>
     
     <header class="bg-orange">
-        <nav class="navbar navbar-expand-lg navbar-dark flex-column flex-xl-row">
-            
-                <img src="./asset/png/logo.png" alt="logo collywood" width="100" class="d-block mx-auto">
+        <nav class="navbar navbar-expand-lg navbar-dark flex-column flex-lg-row">
+                <div class="logo">
+                    <img src="./asset/png/logo.png" alt="logo collywood" width="150" class="d-block mx-auto logo">
+                </div>
                 <!-- Toggle Mobile -->
                     
                         <button class="navbar-toggler my-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,29 +26,29 @@
                    
                     
                 
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <div class="collapse navbar-collapse d-xl-flex justify-content-end" id="navbarScroll">
+                    <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item d-flex justify-content-center align-items-center py-2">
+                            <span class="home"></span><a class="nav-link mx-2" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                  
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mappa</a>
+                        <li class="nav-item d-flex justify-content-center align-items-center py-2">
+                            <span class="about"></span><a class="nav-link mx-2" href="#">About</a>
                         </li>
                   
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cucina</a>
+                        <li class="nav-item d-flex justify-content-center align-items-center py-2">
+                            <span class="mappa"></span><a class="nav-link mx-2" href="#">Mappa</a>
+                        </li>
+                  
+                        <li class="nav-item d-flex justify-content-center align-items-center py-2">
+                            <span class="cucina"></span><a class="nav-link mx-2" href="#">Cucina</a>
                         </li>
                         
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Eventi</a>
+                        <li class="nav-item d-flex justify-content-center align-items-center py-2">
+                            <span class="eventi"></span><a class="nav-link mx-2" href="#">Eventi</a>
                         </li>
                   
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Direzioni</a>
+                        <li class="nav-item d-flex justify-content-center align-items-center py-2">
+                            <span class="direzione"></span><a class="nav-link mx-2" href="#">Direzione</a>
                         </li>
                     </ul>
                 </div>
@@ -71,13 +72,14 @@
     <!-- About -->
     
         <div class="row move-down">
+            <div class="col-0 col-xl-2"></div>
             <div class="col-12 col-xl-6">
-                <div class="section section-a">
+                <div class="section section-a mx-4">
                     <h2>Cosa è Collywood</h2>
                     <p>Collywood è lo spazio dove si sta insieme, si ascolta, si danza, si guarda, si beve e si mangia. Vieni a fare le tue cose preferite in mezzo alla natura, dalla mattina alla sera!</p>                                               
                 </div>
             </div> 
-            <div class="col-12 col-xl-6 section-a-img">
+            <div class="col-12 col-xl-4 section-a-img">
                 <img src="./asset/png/caravan.png" alt="" class="img-fluid">
             </div> 
              
@@ -97,7 +99,7 @@
                     <iframe src="/dist/asset/svg/map.svg" width="80%" height="600" class="img-fluid d-none d-xl-block">
                         Your browser does not support iframes.
                     </iframe>
-                 </div>
+                </div>
             </div>
         </div>
     
@@ -106,9 +108,9 @@
     
     <!-- Cucina -->
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="section section-c">
+        <div class="row bg-cucina">
+            <div class="col-12 mx-auto bg-cucina-inner">
+                <div class="section section-c mx-4">
                     <h2>La Nostra Cucina</h2>
                     <p>Siamo attivi dalla mattina alla sera, quindi colazione al sole con centrifugati freschi, pranzetti bucolici a base di crescentine farcite, griglia per carne, pesce e verdure e cenette al chiaro di luna. Il tutto accompagnato felicemente dal cocktail che più si addice all’orario della giornata. Il menù è variabile a seconda della proposta del cuoco: la griglia è sempre calda e il panorama fa da contorno.</p>     
                     <a href="#" class="btn btn-primary">Scarica Menu</a>                                        
@@ -194,13 +196,17 @@
             </div>
             <div class="col-12 col-xl-6">
                 <h2>Come Raggiungerci</h2>
-                <div class="d-flex">
-                    <div class="car"></div>  
-                    <span>Siamo in via dei Colli 54 a Bologna, all'incrocio tra via dei Colli, via di Sabbiuno e via Cavaioni. Il parcheggio è in via di Sabbiuno a metà della salita sulla destra, un grande prato verde.</span>
+                <div class="row align-items-center">
+                    <div class="col-12 col-xl-6 mx-auto car"></div>  
+                    <div class="col-12 col-xl-6 mx-auto">
+                        <p>Siamo in via dei Colli 54 a Bologna, all'incrocio tra via dei Colli, via di Sabbiuno e via Cavaioni. Il parcheggio è in via di Sabbiuno a metà della salita sulla destra, un grande prato verde.</p>
+                    </div>
                 </div>
-                <div class="d-flex">
-                    <div class="bus"></div>  
-                    <span>Con l'autobus 52 che parte da piazza Cavour, scendendo alla fermata "Cavaioni" sei da noi in 25 minuti. <a href="https://www.tper.it/bo-52">Qui gli orari</a></span>
+                <div class="row align-items-center">
+                    <div class="col-12 col-xl-6 mx-auto bus"></div>  
+                    <div class="col-12 col-xl-6 mx-auto">
+                        <p>Con l'autobus 52 che parte da piazza Cavour, scendendo alla fermata "Cavaioni" sei da noi in 25 minuti. <a href="https://www.tper.it/bo-52">Qui gli orari</a></p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,15 +1,49 @@
+.home, .about, .mappa, .cucina, .eventi, .direzione {
+  display: inline-block;
+  width: 20px;
+  height: 20px; }
+
+.home {
+  background: url("/dist/asset/png/home.png") center/contain; }
+
+.about {
+  background: url("/dist/asset/png/about.png") center/contain; }
+
+.mappa {
+  background: url("/dist/asset/png/mappa.png") center/contain; }
+
+.cucina {
+  background: url("/dist/asset/png/cucina.png") center/contain; }
+
+.eventi {
+  background: url("/dist/asset/png/eventi.png") center/contain; }
+
+.direzione {
+  background: url("/dist/asset/png/direzione.png") center/contain; }
+
 .car, .bus {
   width: 250px;
   height: 200px; }
 
 .car {
-  background: url("/dist/asset/png/car.png") center/cover no-repeat; }
+  background: url("/dist/asset/png/car.png") center/contain no-repeat; }
 
 .bus {
-  background: url("/dist/asset/png/bus.png") center/cover no-repeat; }
+  background: url("/dist/asset/png/bus.png") center/contain no-repeat; }
+
+.bg-cucina {
+  position: relative;
+  padding-top: 25%; }
+  .bg-cucina-inner {
+    background: url("/dist/asset/jpg/cucina-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed; }
 
 .bg-orange {
-  background-color: #F8A82D; }
+  background-color: #F8A82D;
+  padding: 1em 3em; }
 
 .divider {
   height: 150px;
@@ -49,10 +83,16 @@ p {
 .white-space {
   height: 100px; }
 
-.navbar-collapse {
-  width: 100%; }
-  .navbar-collapse a {
-    text-align: center; }
+.navbar {
+  position: relative;
+  max-width: 1400px;
+  margin: auto; }
+  .navbar .logo {
+    transform: translateY(0px); }
+  .navbar-collapse {
+    width: 100%; }
+    .navbar-collapse a {
+      text-align: center; }
 
 .banner {
   background: url(/dist/asset/jpg/banner.jpg);
@@ -81,7 +121,8 @@ p {
     padding: 2.5em 0; }
   .section-c {
     background-color: #202AF7;
-    padding: 1.5em; }
+    padding: 1.5em;
+    margin-bottom: 7.5em; }
     .section-c p {
       margin-bottom: 2em; }
     .section-c .btn {
@@ -94,3 +135,30 @@ p {
       background-color: #39F7E4; }
     .section-d .box-c {
       background-color: #202AF7; }
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    max-height: 100px; }
+    .navbar .logo {
+      transform: translateY(20px); }
+  .banner {
+    background-position: bottom; }
+  .section-c {
+    max-width: 50%;
+    margin: 3em auto; } }
+
+@media screen and (min-width: 1400px) {
+  .banner {
+    height: 70vh;
+    background-position: center; }
+  .section-a-img {
+    transform: translate(-40%, 0); }
+  .bg-cucina {
+    min-height: 800px;
+    padding-top: 0; }
+    .bg-cucina-inner {
+      background: url("/dist/asset/jpg/cucina.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center top;
+      background-attachment: fixed; } }
