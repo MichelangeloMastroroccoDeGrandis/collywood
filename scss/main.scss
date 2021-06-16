@@ -163,12 +163,14 @@ p {
 }
 
 //banner
+.wrap {
+    height: 550px;
+}
 .banner {
-    //background: url('../asset/jpg/banner.jpg');
-    height: 50vh;
+    height: 550px;
 
     .row {
-        height: 50vh;
+        height: 550px;
     }
 }
 
