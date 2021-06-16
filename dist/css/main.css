@@ -4,38 +4,38 @@
   height: 20px; }
 
 .home {
-  background: url("/dist/asset/png/home.png") center/contain; }
+  background: url("../asset/png/home.png") center/contain; }
 
 .about {
-  background: url("/dist/asset/png/about.png") center/contain; }
+  background: url("../asset/png/about.png") center/contain; }
 
 .mappa {
-  background: url("/dist/asset/png/mappa.png") center/contain; }
+  background: url("../asset/png/mappa.png") center/contain; }
 
 .cucina {
-  background: url("/dist/asset/png/cucina.png") center/contain; }
+  background: url("../asset/png/cucina.png") center/contain; }
 
 .eventi {
-  background: url("/dist/asset/png/eventi.png") center/contain; }
+  background: url("../asset/png/eventi.png") center/contain; }
 
 .direzione {
-  background: url("/dist/asset/png/direzione.png") center/contain; }
+  background: url("../asset/png/direzione.png") center/contain; }
 
 .car, .bus {
   width: 250px;
   height: 200px; }
 
 .car {
-  background: url("/dist/asset/png/car.png") center/contain no-repeat; }
+  background: url("../asset/png/car.png") center/contain no-repeat; }
 
 .bus {
-  background: url("/dist/asset/png/bus.png") center/contain no-repeat; }
+  background: url("../asset/png/bus.png") center/contain no-repeat; }
 
 .bg-cucina {
   position: relative;
   padding-top: 25%; }
   .bg-cucina-inner {
-    background: url("/dist/asset/jpg/cucina-mobile.jpg");
+    background: url("../asset/jpg/cucina-mobile.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center top;
@@ -45,9 +45,12 @@
   background-color: #F8A82D;
   padding: 1em 3em; }
 
+.shadow {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2); }
+
 .divider {
   height: 150px;
-  background: url(/dist/asset/png/divider.png);
+  background: url("../asset/png/divider.png");
   background-repeat: repeat;
   background-size: contain;
   margin: 3em 0; }
@@ -81,29 +84,32 @@ p {
   transform: translateY(50px); }
 
 .white-space {
-  height: 100px; }
+  height: 75px; }
 
 .navbar {
   position: relative;
-  max-width: 1400px;
+  max-width: 2000px;
   margin: auto; }
   .navbar .logo {
     transform: translateY(0px); }
+  .navbar-nav li a {
+    font-size: 1.45rem; }
   .navbar-collapse {
     width: 100%; }
     .navbar-collapse a {
       text-align: center; }
 
 .banner {
-  background: url(/dist/asset/jpg/banner.jpg);
+  background: url("../asset/jpg/banner.jpg");
   height: 50vh;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   .banner .row {
     height: 100%; }
 
 .section {
-  border-radius: 25px; }
+  border-radius: 5px; }
   .section h2, .section p {
     color: #fff; }
   .section h2 {
@@ -120,32 +126,142 @@ p {
   .section-b {
     padding: 2.5em 0; }
   .section-c {
+    position: absolute;
     background-color: #202AF7;
     padding: 1.5em;
-    margin-bottom: 7.5em; }
+    margin-bottom: 7.5em;
+    margin-top: 50%;
+    transform: translateY(-25%); }
     .section-c p {
-      margin-bottom: 2em; }
+      margin-bottom: -2em; }
     .section-c .btn {
-      float: right; }
+      float: right;
+      transform: translateY(50px); }
   .section-d .box {
-    height: 300px; }
+    height: 500px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden; }
     .section-d .box-a {
-      background-color: #F8A82D; }
+      background-color: #F8A82D;
+      background: url("../asset/jpg/colly_a.jpeg") center/cover; }
+      .section-d .box-a .box-text {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        line-height: 0;
+        z-index: 1;
+        opacity: 0;
+        transform: translateY(-20%);
+        transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1); }
+        .section-d .box-a .box-text-wrap {
+          text-align: center;
+          margin-top: 25%;
+          transform: translateY(-50%); }
+      .section-d .box-a::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #F8A82D;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(2) translate(-75%, -75%) rotate(-28deg);
+        transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1); }
+      .section-d .box-a:hover::after {
+        transform: scale(2) translate(0, 0) rotate(-28deg); }
+      .section-d .box-a:hover .box-text {
+        opacity: 1;
+        transform: translateY(0); }
     .section-d .box-b {
-      background-color: #39F7E4; }
+      background-color: #39F7E4;
+      background: url("../asset/jpg/colly_b.jpeg") center/cover; }
+      .section-d .box-b .box-text {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        line-height: 0;
+        z-index: 1;
+        opacity: 0;
+        transform: translateY(-20%);
+        transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1); }
+        .section-d .box-b .box-text-wrap {
+          text-align: center;
+          margin-top: 25%;
+          transform: translateY(-50%); }
+      .section-d .box-b::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #202AF7;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(2) translate(-75%, -75%) rotate(-28deg);
+        transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1); }
+      .section-d .box-b:hover::after {
+        transform: scale(2) translate(0, 0) rotate(-28deg); }
+      .section-d .box-b:hover .box-text {
+        opacity: 1;
+        transform: translateY(0); }
     .section-d .box-c {
-      background-color: #202AF7; }
+      background-color: #202AF7;
+      background: url("../asset/jpg/colly_c.jpeg") center/cover; }
+      .section-d .box-c .box-text {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        line-height: 0;
+        z-index: 1;
+        opacity: 0;
+        transform: translateY(-20%);
+        transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1); }
+        .section-d .box-c .box-text-wrap {
+          text-align: center;
+          margin-top: 25%;
+          transform: translateY(-50%); }
+      .section-d .box-c::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #39F7E4;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(2) translate(-75%, -75%) rotate(-28deg);
+        transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1); }
+      .section-d .box-c:hover::after {
+        transform: scale(2) translate(0, 0) rotate(-28deg); }
+      .section-d .box-c:hover .box-text {
+        opacity: 1;
+        transform: translateY(0); }
+
+.bg-cucina-inner {
+  position: relative;
+  min-height: 700px; }
 
 @media screen and (min-width: 992px) {
+  .white-space {
+    height: 100px; }
   .navbar {
     max-height: 100px; }
     .navbar .logo {
       transform: translateY(20px); }
-  .banner {
-    background-position: bottom; }
   .section-c {
     max-width: 50%;
-    margin: 3em auto; } }
+    margin-top: 5%; } }
 
 @media screen and (min-width: 1400px) {
   .banner {
@@ -153,11 +269,17 @@ p {
     background-position: center; }
   .section-a-img {
     transform: translate(-40%, 0); }
+  .section-b {
+    height: 1080px; }
+    .section-b .map {
+      height: 100%; }
+      .section-b .map iframe {
+        height: 100%; }
   .bg-cucina {
     min-height: 800px;
     padding-top: 0; }
     .bg-cucina-inner {
-      background: url("/dist/asset/jpg/cucina.jpg");
+      background: url("../asset/jpg/cucina.jpg");
       background-repeat: no-repeat;
       background-size: 100% auto;
       background-position: center top;

@@ -7,7 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
-   
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Collywood</title>
     
 </head>
@@ -74,7 +76,7 @@
         <div class="row move-down">
             <div class="col-0 col-xl-2"></div>
             <div class="col-12 col-xl-6">
-                <div class="section section-a mx-4">
+                <div class="section section-a mx-4 shadow">
                     <h2>Cosa è Collywood</h2>
                     <p>Collywood è lo spazio dove si sta insieme, si ascolta, si danza, si guarda, si beve e si mangia. Vieni a fare le tue cose preferite in mezzo alla natura, dalla mattina alla sera!</p>                                               
                 </div>
@@ -94,12 +96,13 @@
             <div class="col-12">
                 <div class="section section-b">
                     <a href="#" class="btn btn-primary d-block d-xl-none mx-auto">visita la galleria</a>
+                    <div class="map d-none d-xl-block">
+                        <iframe src="/dist/asset/svg/map.svg" width="1920px" height="600" class="img-fluid d-none d-xl-block mx-auto">
+                            Your browser does not support iframes.
+                        </iframe>
+                    </div>
                 </div>
-                <div>
-                    <iframe src="/dist/asset/svg/map.svg" width="80%" height="600" class="img-fluid d-none d-xl-block">
-                        Your browser does not support iframes.
-                    </iframe>
-                </div>
+                
             </div>
         </div>
     
@@ -110,7 +113,7 @@
     <div class="container-fluid">
         <div class="row bg-cucina">
             <div class="col-12 mx-auto bg-cucina-inner">
-                <div class="section section-c mx-4">
+                <div class="section section-c mx-4 shadow" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="top">
                     <h2>La Nostra Cucina</h2>
                     <p>Siamo attivi dalla mattina alla sera, quindi colazione al sole con centrifugati freschi, pranzetti bucolici a base di crescentine farcite, griglia per carne, pesce e verdure e cenette al chiaro di luna. Il tutto accompagnato felicemente dal cocktail che più si addice all’orario della giornata. Il menù è variabile a seconda della proposta del cuoco: la griglia è sempre calda e il panorama fa da contorno.</p>     
                     <a href="#" class="btn btn-primary">Scarica Menu</a>                                        
@@ -132,10 +135,7 @@
         <div class="white-space"></div>
             <div class="row section section-d">
                 <div class="col-12 col-xl-4">
-                    <div class="box box-a">
-                        <div class="box-image">
-                            <img src="" alt="" />
-                        </div>
+                    <div class="box box-a d-flex justify-content-center align-items-center">
                         <div class="box-text">
                             <div class="box-text-wrap">
                               <p class="box-text-category">Musica</p>
@@ -145,10 +145,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-xl-4">
-                    <div class="box box-b">
-                        <div class="box-image">
-                            <img src="" alt="" />
-                        </div>
+                    <div class="box box-b d-flex justify-content-center align-items-center">
                         <div class="box-text">
                             <div class="box-text-wrap">
                               <p class="box-text-category">Musica</p>
@@ -158,10 +155,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-xl-4">
-                    <div class="box box-c">
-                        <div class="box-image">
-                            <img src="" alt="" />
-                        </div>
+                    <div class="box box-c d-flex justify-content-center align-items-center">
                         <div class="box-text">
                             <div class="box-text-wrap">
                               <p class="box-text-category">Musica</p>
@@ -189,23 +183,23 @@
                     <div id="googleMap" style="width:100%;height:400px;"></div>
                     
                 </div> 
-                <div class="d-flex my-2 py-2">
+                <div class="d-flex my-4 py-4">
                     <a href="#" class="btn btn-primary mx-auto">copia indirizzo</a>  
                 </div>
                  
             </div>
             <div class="col-12 col-xl-6">
-                <h2>Come Raggiungerci</h2>
-                <div class="row align-items-center">
+                <h2 class="text-center text-xl-start mx-4 px-4">Come Raggiungerci</h2>
+                <div class="row align-items-center py-4">
                     <div class="col-12 col-xl-6 mx-auto car"></div>  
                     <div class="col-12 col-xl-6 mx-auto">
-                        <p>Siamo in via dei Colli 54 a Bologna, all'incrocio tra via dei Colli, via di Sabbiuno e via Cavaioni. Il parcheggio è in via di Sabbiuno a metà della salita sulla destra, un grande prato verde.</p>
+                        <p class="mx-4">Siamo in via dei Colli 54 a Bologna, all'incrocio tra via dei Colli, via di Sabbiuno e via Cavaioni. Il parcheggio è in via di Sabbiuno a metà della salita sulla destra, un grande prato verde.</p>
                     </div>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col-12 col-xl-6 mx-auto bus"></div>  
+                <div class="row align-items-center py-4">
+                    <div class="col-12 col-xl-6 mx-auto bus my-4"></div>  
                     <div class="col-12 col-xl-6 mx-auto">
-                        <p>Con l'autobus 52 che parte da piazza Cavour, scendendo alla fermata "Cavaioni" sei da noi in 25 minuti. <a href="https://www.tper.it/bo-52">Qui gli orari</a></p>
+                        <p class="mx-4">Con l'autobus 52 che parte da piazza Cavour, scendendo alla fermata "Cavaioni" sei da noi in 25 minuti. <a href="https://www.tper.it/bo-52">Qui gli orari</a></p>
                     </div>
                 </div>
             </div>
@@ -225,5 +219,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="/dist/js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4XGb7p4CCDuKncTeUU4SF91beZH215Y0&callback=myMap"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

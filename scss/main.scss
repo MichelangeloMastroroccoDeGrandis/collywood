@@ -1,10 +1,10 @@
 // Assets
-$home: url('/dist/asset/png/home.png');
-$about: url('/dist/asset/png/about.png');
-$cucina: url('/dist/asset/png/cucina.png');
-$direzione: url('/dist/asset/png/direzione.png');
-$eventi: url('/dist/asset/png/eventi.png');
-$mappa: url('/dist/asset/png/mappa.png');
+$home: url('../asset/png/home.png');
+$about: url('../asset/png/about.png');
+$cucina: url('../asset/png/cucina.png');
+$direzione: url('../asset/png/direzione.png');
+$eventi: url('../asset/png/eventi.png');
+$mappa: url('../asset/png/mappa.png');
 
 .home, .about, .mappa, .cucina, .eventi, .direzione {
     display: inline-block;
@@ -30,11 +30,8 @@ $mappa: url('/dist/asset/png/mappa.png');
     background: $direzione center/contain;
 }
 
-$bg-img: url('/dist/asset/jpg/banner.jpg');
-$bg-cucina: url('/dist/asset/jpg/cucina.jpg');
-$bg-cucina-mobile: url('/dist/asset/jpg/cucina-mobile.jpg');
-$bus: url('/dist/asset/png/bus.png');
-$car: url('/dist/asset/png/car.png');
+$bus: url('../asset/png/bus.png');
+$car: url('../asset/png/car.png');
 
 .car, .bus {
     width: 250px;
@@ -49,6 +46,13 @@ $car: url('/dist/asset/png/car.png');
     background: $bus center/contain no-repeat;
 }
 
+$bg-img: url('../asset/jpg/banner.jpg');
+$bg-cucina: url('../asset/jpg/cucina.jpg');
+$bg-cucina-mobile: url('../asset/jpg/cucina-mobile.jpg');
+$colly-a: url('../asset/jpg/colly_a.jpeg');
+$colly-b: url('../asset/jpg/colly_b.jpeg');
+$colly-c: url('../asset/jpg/colly_c.jpeg');
+
 .bg-cucina {
     position: relative;
     padding-top: 25%;
@@ -59,6 +63,7 @@ $car: url('/dist/asset/png/car.png');
         background-size: 100% auto;
         background-position: center top;
         background-attachment: fixed;
+
     }
     
 }
@@ -70,7 +75,7 @@ $light-blue: #39F7E4;
 $dark-blue: #202AF7;
 
 //variables
-$max-width: 1400px;
+$max-width: 2000px;
 
 //utilities
 .bg-orange {
@@ -78,9 +83,13 @@ $max-width: 1400px;
     padding: 1em 3em;
 }
 
+.shadow {
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+}
+
 .divider {
     height: 150px;
-    background: url(/dist/asset/png/divider.png);
+    background: url('../asset/png/divider.png');
     background-repeat: repeat;
     background-size: contain;
     margin: 3em 0;
@@ -122,7 +131,7 @@ p {
 }
 
 .white-space {
-    height: 100px;
+    height: 75px;
 }
 
 //Menu
@@ -136,6 +145,14 @@ p {
         transform: translateY(0px);
     }
 
+    &-nav {
+        li {
+            a {
+                font-size: 1.45rem;
+            }
+        }
+    }
+
     &-collapse {
         width: 100%;
         
@@ -147,10 +164,11 @@ p {
 
 //banner
 .banner {
-    background: url(/dist/asset/jpg/banner.jpg);
+    background: url('../asset/jpg/banner.jpg');
     height: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center; 
 
     .row {
         height: 100%;
@@ -160,7 +178,8 @@ p {
 //main
 
 .section {
-    border-radius: 25px;
+    border-radius: 5px;
+    
 
     h2, p {
             color: #fff;
@@ -177,6 +196,7 @@ p {
     &-a {
         background-color: $light-blue;
         padding: 1.5em;
+        
 
         &-img {
             transform: translate(0, -40%);
@@ -190,36 +210,181 @@ p {
     }
 
     &-c {
-        
+        position: absolute;
         background-color: $dark-blue;
         padding: 1.5em;
         margin-bottom: 7.5em;
+        margin-top: 50%;
+        transform: translateY(-25%);
 
         p {
-            margin-bottom: 2em;
+            margin-bottom: -2em;
         }
 
         .btn {
             float: right;
+            transform: translateY(50px);
         }
     }
     
     &-d {
+
         .box {
-            height: 300px;
+            height: 500px;
+            box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+
             
+
             &-a {
                 background-color: $orange;
+                background: $colly-a center/cover;
+                
+                .box-text {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: auto;
+                    line-height: 0;
+                    z-index: 1;
+                    opacity: 0;
+                    transform: translateY(-20%);
+                    transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+
+                    &-wrap {
+                        text-align: center;
+                        margin-top: 25%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    background-color: $orange;
+                    opacity: 1;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transform: scale(2) translate(-75%, -75%) rotate(-28deg);
+                    transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+                }
+
+                &:hover::after {
+                    transform: scale(2) translate(0,0) rotate(-28deg);
+                }
+                &:hover .box-text {
+                    opacity: 1;
+                    transform: translateY(0); 
+                }
+                
             }
             &-b {
                 background-color: $light-blue;
+                background: $colly-b center/cover;
+                
+                .box-text {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: auto;
+                    line-height: 0;
+                    z-index: 1;
+                    opacity: 0;
+                    transform: translateY(-20%);
+                    transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+
+                    &-wrap {
+                        text-align: center;
+                        margin-top: 25%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    background-color: $dark-blue;
+                    opacity: 1;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transform: scale(2) translate(-75%, -75%) rotate(-28deg);
+                    transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+                }
+
+                &:hover::after {
+                    transform: scale(2) translate(0,0) rotate(-28deg);
+                }
+                &:hover .box-text {
+                    opacity: 1;
+                    transform: translateY(0); 
+                }
+                
             }
             &-c {
                 background-color: $dark-blue;
+                background: $colly-c center/cover;
+
+                .box-text {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: auto;
+                    line-height: 0;
+                    z-index: 1;
+                    opacity: 0;
+                    transform: translateY(-20%);
+                    transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+
+                    &-wrap {
+                        text-align: center;
+                        margin-top: 25%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    background-color: $light-blue;
+                    opacity: 1;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transform: scale(2) translate(-75%, -75%) rotate(-28deg);
+                    transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+                }
+
+                &:hover::after {
+                    transform: scale(2) translate(0,0) rotate(-28deg);
+                }
+                &:hover .box-text {
+                    opacity: 1;
+                    transform: translateY(0); 
+                }
             }
         }
     }
 }
+
+.bg-cucina {
+    &-inner {
+        position: relative;
+        min-height: 700px;
+    }
+}
+
 
 //Import
 @import "desktop";

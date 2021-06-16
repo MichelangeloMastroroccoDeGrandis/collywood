@@ -1,5 +1,9 @@
 @media screen and (min-width: 992px)  {
 
+    .white-space {
+        height: 100px;
+    }
+
     .navbar{
         max-height: 100px;
         
@@ -7,15 +11,11 @@
             transform: translateY(20px);
         }
     }
-    
-    .banner {
-        background-position: bottom;
-    }
 
     .section {
         &-c {
             max-width: 50%;
-            margin: 3em auto;
+            margin-top: 5%;
         }
     }
     
@@ -33,6 +33,17 @@
         &-a {
             &-img {
                 transform: translate(-40%, 0);
+            }
+        }
+        &-b {
+            height: 1080px;
+
+            .map {
+                height: 100%;
+
+                iframe {
+                    height: 100%;
+                }
             }
         }
     }
