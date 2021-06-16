@@ -164,14 +164,11 @@ p {
 
 //banner
 .banner {
-    background: url('../asset/jpg/banner.jpg');
+    //background: url('../asset/jpg/banner.jpg');
     height: 50vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
 
     .row {
-        height: 100%;
+        height: 50vh;
     }
 }
 
