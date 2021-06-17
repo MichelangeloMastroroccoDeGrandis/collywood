@@ -1,20 +1,18 @@
-// add background url to section and add data-type and data-speed to any section you want
+$(window).scroll(function(){
 
-$(function () {
-  //cache the window object
-  var $window = $(window);
-
-  // Parallax Backgrond
-  $('div[data-type="background"]').each(function () {
-    var $bgobj = $(this);
-
-    $(window).scroll(function () {
-      var yPos = -($window.scrollTop() / $bgobj.data("speed"));
-      var yPos2 = yPos + 100;
-
-      var coords = "50%" + yPos  + "px" ;
-
-      $bgobj.css({ backgroundPosition: coords });
+    var ws = $(window).scrollTop();
+  
+    $('#layer1').css({
+      'transform': `translate(0px, -${ws / 2}px)`
     });
+
+  
+    $('#layer3').css({
+      'transform': `translate(0px, -${ws / 3}px)`
+    });
+  
+    $('#layer4').css({
+      'transform': `translate(0px, -${ws / 4}px)`
+    });
+  
   });
-});

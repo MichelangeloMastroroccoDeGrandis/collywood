@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oswald:wght@500&display=swap");
 .home, .about, .mappa, .cucina, .eventi, .direzione {
   display: inline-block;
   width: 20px;
@@ -41,6 +42,9 @@
     background-position: center top;
     background-attachment: fixed; }
 
+* {
+  font-family: 'Noto Sans', sans-serif; }
+
 .bg-orange {
   background-color: #F8A82D;
   padding: 1em 3em; }
@@ -70,15 +74,29 @@
   --bs-gutter-x: 0; }
 
 body {
-  background-color: #EEE1C8; }
+  background-color: #fff; }
 
 p {
   line-height: 1.8; }
 
+a {
+  color: #a41623; }
+  a:hover {
+    color: #14213d; }
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px; }
+
 .btn {
   max-width: 220px;
   font-size: 1.5em;
-  padding: .5em; }
+  padding: .5em;
+  background-color: #a41623;
+  border: none; }
+  .btn:hover, .btn:focus, .btn:active {
+    background-color: #F8A82D;
+    box-shadow: none; }
 
 .move-down {
   transform: translateY(50px); }
@@ -99,13 +117,28 @@ p {
     .navbar-collapse a {
       text-align: center; }
 
-.wrap {
-  height: 550px; }
+.banner-wrap {
+  height: 655px;
+  position: relative; }
+  .banner-wrap-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-color: #f18700; }
+  .banner-wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
 
-.banner {
-  height: 550px; }
-  .banner .row {
-    height: 550px; }
+.banner-mobile {
+  background: url("../asset/jpg/banner-mobile.jpg") no-repeat bottom/cover;
+  height: 600px; }
 
 .section {
   border-radius: 5px; }
@@ -116,7 +149,7 @@ p {
   .section p {
     margin: 0 1em; }
   .section-a {
-    background-color: #39F7E4;
+    background-color: #a41623;
     padding: 1.5em; }
     .section-a-img {
       transform: translate(0, -40%);
@@ -126,7 +159,7 @@ p {
     padding: 2.5em 0; }
   .section-c {
     position: absolute;
-    background-color: #202AF7;
+    background-color: #14213d;
     padding: 1.5em;
     margin-bottom: 7.5em;
     margin-top: 50%;
@@ -177,7 +210,7 @@ p {
         opacity: 1;
         transform: translateY(0); }
     .section-d .box-b {
-      background-color: #39F7E4;
+      background-color: #a41623;
       background: url("../asset/jpg/colly_b.jpeg") center/cover; }
       .section-d .box-b .box-text {
         position: absolute;
@@ -198,7 +231,7 @@ p {
         content: "";
         position: absolute;
         display: block;
-        background-color: #202AF7;
+        background-color: #14213d;
         opacity: 1;
         top: 0;
         left: 0;
@@ -212,7 +245,7 @@ p {
         opacity: 1;
         transform: translateY(0); }
     .section-d .box-c {
-      background-color: #202AF7;
+      background-color: #14213d;
       background: url("../asset/jpg/colly_c.jpeg") center/cover; }
       .section-d .box-c .box-text {
         position: absolute;
@@ -233,7 +266,7 @@ p {
         content: "";
         position: absolute;
         display: block;
-        background-color: #39F7E4;
+        background-color: #a41623;
         opacity: 1;
         top: 0;
         left: 0;

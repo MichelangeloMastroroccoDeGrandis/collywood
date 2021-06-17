@@ -1,5 +1,5 @@
 //Smooth Scrolling
-$('#home-btn a').on('click', function(event) {
+$('.nav-item a').on('click', function(event) {
 	if(this.hash !== '') {
 		event.preventDefault();
 		
@@ -7,9 +7,9 @@ $('#home-btn a').on('click', function(event) {
 		
 		setTimeout( function() { $('html, body').animate(
 		{
-				scrollTop: $(hash).offset().top + 50
+				scrollTop: $(hash).offset().top - 50
 		},
 		800
-		)}, 1000);
+		)}, 500);
 	}
 });

@@ -1,3 +1,6 @@
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oswald:wght@500&display=swap');
+
 // Assets
 $home: url('../asset/png/home.png');
 $about: url('../asset/png/about.png');
@@ -46,7 +49,7 @@ $car: url('../asset/png/car.png');
     background: $bus center/contain no-repeat;
 }
 
-$bg-img: url('../asset/jpg/banner.jpg');
+$bg-img: url('../asset/jpg/banner-mobile.jpg');
 $bg-cucina: url('../asset/jpg/cucina.jpg');
 $bg-cucina-mobile: url('../asset/jpg/cucina-mobile.jpg');
 $colly-a: url('../asset/jpg/colly_a.jpeg');
@@ -70,14 +73,18 @@ $colly-c: url('../asset/jpg/colly_c.jpeg');
 
 //colors
 $orange: #F8A82D;
-$straw: #EEE1C8;
-$light-blue: #39F7E4;
-$dark-blue: #202AF7;
+$straw: #fff;
+$red: #a41623;
+$blue: #14213d;
 
 //variables
 $max-width: 2000px;
 
 //utilities
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 .bg-orange {
     background-color: $orange;
     padding: 1em 3em;
@@ -120,10 +127,30 @@ p {
     line-height: 1.8;
 }
 
+a {
+    color: $red;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
 .btn {
     max-width: 220px;
     font-size: 1.5em;
     padding: .5em;
+    background-color: $red;
+    border: none;
+
+    &:hover, &:focus, &:active {
+        background-color: $orange;
+        box-shadow: none;
+    }
 }
 
 .move-down {
@@ -163,16 +190,37 @@ p {
 }
 
 //banner
-.wrap {
-    height: 550px;
-}
 .banner {
-    height: 550px;
 
-    .row {
-        height: 550px;
+    &-wrap {
+        height: 655px;
+        position: relative;
+        &-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background-color: #f18700;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
     }
+
+    &-mobile {
+        background: $bg-img no-repeat bottom/cover;
+        height: 600px;
+    }
+    
 }
+
 
 //main
 
@@ -193,7 +241,7 @@ p {
     }
 
     &-a {
-        background-color: $light-blue;
+        background-color: $red;
         padding: 1.5em;
         
 
@@ -210,7 +258,7 @@ p {
 
     &-c {
         position: absolute;
-        background-color: $dark-blue;
+        background-color: $blue;
         padding: 1.5em;
         margin-bottom: 7.5em;
         margin-top: 50%;
@@ -283,7 +331,7 @@ p {
                 
             }
             &-b {
-                background-color: $light-blue;
+                background-color: $red;
                 background: $colly-b center/cover;
                 
                 .box-text {
@@ -309,7 +357,7 @@ p {
                     content: "";
                     position: absolute;
                     display: block;
-                    background-color: $dark-blue;
+                    background-color: $blue;
                     opacity: 1;
                     top: 0;
                     left: 0;
@@ -329,7 +377,7 @@ p {
                 
             }
             &-c {
-                background-color: $dark-blue;
+                background-color: $blue;
                 background: $colly-c center/cover;
 
                 .box-text {
@@ -355,7 +403,7 @@ p {
                     content: "";
                     position: absolute;
                     display: block;
-                    background-color: $light-blue;
+                    background-color: $red;
                     opacity: 1;
                     top: 0;
                     left: 0;
