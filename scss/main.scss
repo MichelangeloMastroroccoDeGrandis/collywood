@@ -35,8 +35,9 @@ $mappa: url('../asset/png/mappa.png');
 
 $bus: url('../asset/png/bus.png');
 $car: url('../asset/png/car.png');
+$man: url('../asset/png/man.png');
 
-.car, .bus {
+.car, .bus, .man {
     width: 250px;
     height: 200px;
 }
@@ -47,6 +48,10 @@ $car: url('../asset/png/car.png');
 
 .bus {
     background: $bus center/contain no-repeat;
+}
+
+.man {
+    background: $man center/contain no-repeat;
 }
 
 $bg-img: url('../asset/jpg/banner-mobile.jpg');
@@ -124,7 +129,16 @@ body {
 }
 
 p {
-    line-height: 1.8;
+    font-size: 1.25rem;
+    line-height: 2;
+    
+    &.font-small {
+        font-size: 1rem;
+    }
+}
+
+ul {
+    list-style: none;
 }
 
 a {
@@ -138,6 +152,15 @@ a {
 h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.5rem;
 }
 
 .btn {
@@ -221,9 +244,32 @@ h1, h2, h3 {
     
 }
 
+//sidebar
+.sidebar-social {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    z-index: 9999;
+
+    svg {
+        color: #fff;
+    }
+
+    .fb {
+        background-color: $blue;
+    }
+
+    .ig {
+        background-color: $red;
+    }
+
+    .mail {
+        background-color: $orange;
+    }
+}
 
 //main
-
 .section {
     border-radius: 5px;
     

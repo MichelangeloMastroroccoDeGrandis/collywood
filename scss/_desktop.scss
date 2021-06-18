@@ -13,6 +13,12 @@
     }
 
     .section {
+        &-a {
+            &-img {
+                transform: translate(-40%, 0);
+            }
+        }
+
         &-c {
             max-width: 50%;
             margin-top: 5%;
@@ -31,11 +37,6 @@
     }
 
     .section {
-        &-a {
-            &-img {
-                transform: translate(-40%, 0);
-            }
-        }
         &-b {
             height: 1080px;
 
