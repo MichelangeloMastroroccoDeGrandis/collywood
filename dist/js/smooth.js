@@ -9,7 +9,7 @@ $('.nav-item a').on('click', function(event) {
 		{
 				scrollTop: $(hash).offset().top - 50
 		},
-		800
-		)}, 500);
+		1000
+		)}, 100);
 	}
 });

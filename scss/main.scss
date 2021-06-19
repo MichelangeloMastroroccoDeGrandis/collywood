@@ -251,22 +251,34 @@ h2 {
     left: 0;
     top: 50%;
     z-index: 9999;
+    transform: translateX(-85px);
+    animation: slidein 1.5s forwards;
+    animation-delay: 3s;
+    animation-timing-function: cubic-bezier(.1,.5,.85,.95);
 
-    svg {
-        color: #fff;
-    }
 
-    .fb {
-        background-color: $blue;
-    }
 
-    .ig {
-        background-color: $red;
-    }
+    div {
+        border: 3px solid #fff;
+        svg {
+            color: #fff;
+        }
 
-    .mail {
-        background-color: $orange;
+        &.fb {
+            background-color: $blue;
+        }
+
+        &.ig {
+            background-color: $red;
+            border-top: 0;
+            border-bottom: 0;
+        }
+
+        &.mail {
+            background-color: $orange;
+        }
     }
+    
 }
 
 //main
@@ -481,3 +493,9 @@ h2 {
 
 //Import
 @import "desktop";
+
+//Animation
+@keyframes slidein {
+    from {transform: translateX(-85px);}
+    to  {transform: translateX(0px);}
+  }
