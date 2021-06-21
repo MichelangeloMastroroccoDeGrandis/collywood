@@ -311,6 +311,9 @@ h2 {
         background-color: $red;
         padding: 1.5em;
         
+        a {
+            color: $orange;
+        }
 
         &-img {
             transform: translate(0, -40%);
@@ -500,43 +503,20 @@ h2 {
 }
 
 //gallery
-.modal {
-    &-dialog {
-        margin: 0;
-        height: 100vh;
-    }
-
-    &-content {
-        height: 100%;
-    }
-
-    &-body {
-        img {
-            height: 100%;
-            object-fit: cover;
-        }
-    }
+.carousel-caption {
+    position: initial;
+    color: #000;
+    height: 300px;
 }
 
-@media (orientation: landscape) {
-    .modal {
-        &-dialog {
-            margin: 0;
-            height: 100vw;
-        }
-    
-        &-content {
-            height: 100%;
-        }
-    
-        &-body {
-            img {
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-    }
-  }
+.carousel-control-next, .carousel-control-prev {
+    bottom: 50%;
+}
+
+//footer 
+footer {
+    color: #fff;
+}
 
 //Import
 @import "desktop";

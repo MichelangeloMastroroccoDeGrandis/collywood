@@ -197,6 +197,8 @@ h2 {
   .section-a {
     background-color: #a41623;
     padding: 1.5em; }
+    .section-a a {
+      color: #F8A82D; }
     .section-a-img {
       transform: translate(0, -40%);
       position: relative;
@@ -330,26 +332,16 @@ h2 {
   position: relative;
   min-height: 700px; }
 
-.modal-dialog {
-  margin: 0;
-  height: 100vh; }
+.carousel-caption {
+  position: initial;
+  color: #000;
+  height: 300px; }
 
-.modal-content {
-  height: 100%; }
+.carousel-control-next, .carousel-control-prev {
+  bottom: 50%; }
 
-.modal-body img {
-  height: 100%;
-  object-fit: cover; }
-
-@media (orientation: landscape) {
-  .modal-dialog {
-    margin: 0;
-    height: 100vw; }
-  .modal-content {
-    height: 100%; }
-  .modal-body img {
-    height: 100%;
-    object-fit: cover; } }
+footer {
+  color: #fff; }
 
 @media screen and (min-width: 992px) {
   p {
