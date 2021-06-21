@@ -129,11 +129,11 @@ body {
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 2;
     
     &.font-small {
-        font-size: 1rem;
+        font-size: .75rem;
     }
 }
 
@@ -173,6 +173,13 @@ h2 {
     &:hover, &:focus, &:active {
         background-color: $orange;
         box-shadow: none;
+    }
+
+    &-expand {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
     }
 }
 
@@ -234,6 +241,8 @@ h2 {
             width: 100%;
             height: 100%;
             z-index: -1;
+            object-fit: cover;
+            object-position: right bottom;
         }
     }
 
@@ -319,7 +328,7 @@ h2 {
         background-color: $blue;
         padding: 1.5em;
         margin-bottom: 7.5em;
-        margin-top: 50%;
+        margin-top: 5%;
         transform: translateY(-25%);
 
         p {
@@ -490,6 +499,44 @@ h2 {
     }
 }
 
+//gallery
+.modal {
+    &-dialog {
+        margin: 0;
+        height: 100vh;
+    }
+
+    &-content {
+        height: 100%;
+    }
+
+    &-body {
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    .modal {
+        &-dialog {
+            margin: 0;
+            height: 100vw;
+        }
+    
+        &-content {
+            height: 100%;
+        }
+    
+        &-body {
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+  }
 
 //Import
 @import "desktop";

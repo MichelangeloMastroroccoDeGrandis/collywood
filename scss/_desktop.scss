@@ -1,5 +1,14 @@
 @media screen and (min-width: 992px)  {
 
+    p {
+        font-size: 1.25rem;
+        line-height: 2;
+        
+        &.font-small {
+            font-size: 1rem;
+        }
+    }
+
     .white-space {
         height: 100px;
     }
