@@ -57,6 +57,7 @@ $man: url('../asset/png/man.png');
 $bg-img: url('../asset/jpg/banner-mobile.jpg');
 $bg-cucina: url('../asset/jpg/cucina.jpg');
 $bg-cucina-mobile: url('../asset/jpg/cucina-mobile.jpg');
+$bg-map: url('../asset/jpg/map.jpg');
 $colly-a: url('../asset/jpg/colly_a.jpeg');
 $colly-b: url('../asset/jpg/colly_b.jpeg');
 $colly-c: url('../asset/jpg/colly_c.jpeg');
@@ -324,6 +325,13 @@ h2 {
 
     &-b {
         padding: 2.5em 0;
+
+        .map {
+            width: 850px;
+            height: auto;
+            background: $bg-map no-repeat center;
+            margin: auto;
+        }
     }
 
     &-c {
@@ -505,7 +513,7 @@ h2 {
 .carousel-caption {
     position: initial;
     color: #000;
-    height: 300px;
+    max-height: 300px;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -519,6 +527,7 @@ footer {
 
 //Import
 @import "desktop";
+@import "map";
 
 //Animation
 @keyframes slidein {

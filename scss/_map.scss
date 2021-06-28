@@ -1,0 +1,55 @@
+.map {
+    position: relative;
+
+    .alert-info {
+      position: absolute;
+      top: 25px;
+      right: 80px;
+      padding: 5px;
+      width: auto;
+      background-color: $orange;
+      border: $blue;
+      animation: pulse 2s infinite;
+      p {
+        font-size: 8px;
+        transform: scale(.85);
+      }
+    }
+    svg {
+      position: absolute;
+
+      &#kitchen {
+        &_1 {
+          top: 300px;
+          left: 150px;
+          .cls-1 {
+            fill:#ff8661;
+          }
+          .cls-2 {
+            fill:#e8755b;
+          }
+          .cls-3 {
+            fill:#ffaa71;
+          }
+        } 
+      }
+    }
+}
+
+//Animation
+@keyframes pulse {
+    0% {
+      
+      box-shadow: 0 0 0 0 rgba(248, 168, 45, 0.7);
+    }
+    
+    70% {
+      
+      box-shadow: 0 0 0 10px rgba(248, 168, 45, 0.3);
+    }
+    
+    100% {
+      
+      box-shadow: 0 0 0 0 rgba(248, 168, 45, 0);
+    }
+  }

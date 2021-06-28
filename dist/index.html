@@ -110,12 +110,11 @@
                     
                 </div>
             </div> 
-            <div class="col-12 col-xl-4 section-a-img">
+            <div class="col-12 col-xl-4 d-flex section-a-img">
                 <img src="./asset/png/caravan.png" alt="" class="img-fluid">
-            </div> 
-             
+            </div>     
         </div>
-    
+        <div class="white-space"></div>
     </div>
     <div class="divider"></div>
     
@@ -124,17 +123,16 @@
         <div class="row">
             <div class="col-12">
                 <div class="section section-b">
-                    <a href="gallery.html" class="btn btn-primary d-block d-xl-none mx-auto">visita la galleria</a>
-                    <div class="map d-none d-xl-block">
-                        <iframe src="/dist/asset/svg/map.svg" width="100%" height="600" class="img-fluid d-none d-xl-block mx-auto">
-                            Your browser does not support iframes.
-                        </iframe>
+                    <a href="gallery.html" class="btn btn-primary d-block d-xxl-none mx-auto">visita la galleria</a>
+                    <div class="map d-none d-xxl-block">
+                        <div class="alert alert-info" role="alert">
+                            <p>Scopri collywood col virtual tour</p>
+                          </div>
+                         <a data-bs-toggle="modal" href="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" id="kitchen_1" viewBox="0 0 39.75 66.1" width="40px" height="70px"><defs></defs><title>Clicca per vedere la cucina</title><g id="Livello_2" data-name="Livello 2"><g id="Livello_1-2" data-name="Livello 1"><rect class="cls-1" x="-11.8" y="15.85" width="63.35" height="34.39" transform="translate(54.53 16.11) rotate(94.98)"/><polygon class="cls-1" points="5.5 0 21.22 17.66 39.76 2.98 5.5 0"/><polygon class="cls-2" points="5.5 0 21.22 17.66 18.4 50 0 63.11 5.5 0"/><polygon class="cls-3" points="39.76 2.98 21.22 17.66 18.4 50 34.26 66.09 39.76 2.98"/></g></g></svg></a>
                     </div>
                 </div>
-                
             </div>
         </div>
-    
     </div>
     <div class="divider"></div>
     
@@ -285,7 +283,58 @@
             </div>
         </div>
     </footer>
-    
+    <!-- Modal Virtual Map -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cucina</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="carouselExampleCaptions" class="carousel slide" data-interval="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./asset/jpg/colly_a.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block mx-4">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./asset/jpg/colly_b.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block mx-4">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide. Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./asset/jpg/colly_c.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block mx-4">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <!-- Google Maps-->
@@ -294,12 +343,7 @@
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>
-    <!-- Parallax & smooth 
 
-        <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
-        <script type="text/javascript" src="js/jquery.jparallax.min.js"></script>
-        <script type="text/javascript" src="js/jquery.event.frame.js"></script>
--->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/smooth.js"></script>
     <script src="js/parallax.js"></script>
