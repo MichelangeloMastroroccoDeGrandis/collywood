@@ -132,7 +132,7 @@ h2 {
   .navbar .logo {
     transform: translateY(0px); }
   .navbar-nav li a {
-    font-size: 1.45rem; }
+    font-size: 1rem; }
   .navbar-collapse {
     width: 100%; }
     .navbar-collapse a {
@@ -200,14 +200,19 @@ h2 {
     .section-a a {
       color: #F8A82D; }
     .section-a-img {
-      transform: translate(0, -40%);
+      transform: translate(0, -20%);
       position: relative;
       z-index: -1; }
+      .section-a-img .ruota {
+        transform: translate(0, 30%);
+        max-width: 300px;
+        display: block;
+        margin: auto; }
   .section-b {
     padding: 2.5em 0; }
     .section-b .map {
       width: 850px;
-      height: auto;
+      height: 696px;
       background: url("../asset/jpg/map.jpg") no-repeat center;
       margin: auto; }
   .section-c {
@@ -348,6 +353,8 @@ footer {
   color: #fff; }
 
 @media screen and (min-width: 992px) {
+  .banner-wrap {
+    height: 300px; }
   p {
     font-size: 1.25rem;
     line-height: 2; }
@@ -361,6 +368,9 @@ footer {
       transform: translateY(20px); }
   .section-a-img {
     transform: translate(-40%, 0); }
+    .section-a-img img {
+      position: absolute;
+      bottom: 0; }
   .section-c {
     max-width: 50%;
     margin-top: 5%;
@@ -373,9 +383,7 @@ footer {
   .section-b {
     height: 696px; }
     .section-b .map {
-      height: 100%; }
-      .section-b .map iframe {
-        height: 100%; }
+      height: 696px; }
   .bg-cucina {
     min-height: 800px;
     padding-top: 0; }

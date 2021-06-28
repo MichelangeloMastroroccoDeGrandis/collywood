@@ -61,6 +61,7 @@ $bg-map: url('../asset/jpg/map.jpg');
 $colly-a: url('../asset/jpg/colly_a.jpeg');
 $colly-b: url('../asset/jpg/colly_b.jpeg');
 $colly-c: url('../asset/jpg/colly_c.jpeg');
+$ruota: url('../asset/gif/ruota.gif');
 
 .bg-cucina {
     position: relative;
@@ -206,7 +207,7 @@ h2 {
     &-nav {
         li {
             a {
-                font-size: 1.45rem;
+                font-size: 1rem;
             }
         }
     }
@@ -317,9 +318,17 @@ h2 {
         }
 
         &-img {
-            transform: translate(0, -40%);
+            transform: translate(0, -20%);
             position: relative;
             z-index: -1;
+
+            .ruota {
+                transform: translate(0, 30%);
+                max-width: 300px;
+                display: block;
+                margin: auto;
+            }
+            
         }
     }
 
@@ -328,7 +337,7 @@ h2 {
 
         .map {
             width: 850px;
-            height: auto;
+            height: 696px;
             background: $bg-map no-repeat center;
             margin: auto;
         }

@@ -1,5 +1,12 @@
 @media screen and (min-width: 992px)  {
 
+    .banner {
+        &-wrap {
+            height: 300px;
+        }
+        
+    }
+
     p {
         font-size: 1.25rem;
         line-height: 2;
@@ -25,6 +32,10 @@
         &-a {
             &-img {
                 transform: translate(-40%, 0);
+                img {
+                    position: absolute;
+                    bottom: 0;
+                }
             }
         }
 
@@ -37,6 +48,7 @@
     
 }
 
+
 @media screen and (min-width: 1400px) {
 
     
@@ -47,15 +59,13 @@
     }
 
     .section {
+        
         &-b {
             height: 696px;
 
             .map {
-                height: 100%;
+                height: 696px;
 
-                iframe {
-                    height: 100%;
-                }
             }
         }
     }

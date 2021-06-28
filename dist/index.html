@@ -34,15 +34,15 @@
                     <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                   
                         <li class="nav-item d-flex justify-content-center align-items-center py-2">
-                            <span class="cucina"></span><a class="nav-link mx-2" href="#cucina">Cucina</a>
+                            <span class="cucina"></span><a class="nav-link mx-2" href="#cucina">CUCINA</a>
                         </li>
                         
                         <li class="nav-item d-flex justify-content-center align-items-center py-2">
-                            <span class="eventi"></span><a class="nav-link mx-2" href="#eventi">Eventi</a>
+                            <span class="eventi"></span><a class="nav-link mx-2" href="#eventi">EVENTI</a>
                         </li>
                   
                         <li class="nav-item d-flex justify-content-center align-items-center py-2">
-                            <span class="direzione"></span><a class="nav-link mx-2" href="#direzione">Direzione</a>
+                            <span class="direzione"></span><a class="nav-link mx-2" href="#direzione">DIREZIONE</a>
                         </li>
                     </ul>
                 </div>
@@ -77,8 +77,8 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="banner-mobile d-block d-xl-none"></div>
-        <div class="banner-wrap d-none d-xl-flex">
+        <div class="banner-mobile d-block d-md-none"></div>
+        <div class="banner-wrap d-none d-md-flex">
             <div class="banner-wrap-bg"></div>
             <img src="./asset/png/banner_1.png" id="layer1" class="img-fluid" alt="">
             <img src="./asset/png/banner_2.png" id="layer2" class="img-fluid" alt="">
@@ -101,8 +101,8 @@
     <div id="about" class="container-fluid">
    
         <div class="row move-down">
-            <div class="col-0 col-xl-2"></div>
-            <div class="col-12 col-xl-6">
+            <div class="col-0 col-lg-2"></div>
+            <div class="col-12 col-lg-6">
                 <div class="section section-a mx-4 shadow">
                     <h2 class="mx-3">Cosa è Collywood</h2>
                     <p class="d-block d-xl-none">Collywood è il posto per stare bene insieme sui colli bolognesi! Un grande prato dove rilassarti al sole o distenderti al fresco degli alberi, senza pareti né soffitti. Ma non è solo il luogo meraviglioso che ci ospita l’unico motivo per venirci a trovare: vi proponiamo una programmazione d'intrattenimento artistica dal sapore nostrano. Consulta qui il <a href="#">programma</a>!</p>
@@ -110,8 +110,9 @@
                     
                 </div>
             </div> 
-            <div class="col-12 col-xl-4 d-flex section-a-img">
-                <img src="./asset/png/caravan.png" alt="" class="img-fluid">
+            <div class="col-12 col-lg-4 section-a-img">
+                <img src="./asset/png/caravan.png" alt="" class="img-fluid d-block mx-auto">
+                <img src="./asset/gif/ruota.gif" alt="" class="img-fluid d-md-none ruota">
             </div>     
         </div>
         <div class="white-space"></div>
@@ -123,12 +124,13 @@
         <div class="row">
             <div class="col-12">
                 <div class="section section-b">
-                    <a href="gallery.html" class="btn btn-primary d-block d-xxl-none mx-auto">visita la galleria</a>
-                    <div class="map d-none d-xxl-block">
-                        <div class="alert alert-info" role="alert">
+                    <img src="./asset/gif/ruota.gif" alt="" class="img-fluid w-50 d-none d-md-block d-lg-none mx-auto mb-4 pb-4 ruota">
+                    <a href="gallery.html" class="btn btn-primary d-block d-lg-none mx-auto">visita la galleria</a>
+                    <div class="map d-none d-lg-block">
+                        <div class="alert alert-info d-none d-lg-block" role="alert">
                             <p>Scopri collywood col virtual tour</p>
                           </div>
-                         <a data-bs-toggle="modal" href="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" id="kitchen_1" viewBox="0 0 39.75 66.1" width="40px" height="70px"><defs></defs><title>Clicca per vedere la cucina</title><g id="Livello_2" data-name="Livello 2"><g id="Livello_1-2" data-name="Livello 1"><rect class="cls-1" x="-11.8" y="15.85" width="63.35" height="34.39" transform="translate(54.53 16.11) rotate(94.98)"/><polygon class="cls-1" points="5.5 0 21.22 17.66 39.76 2.98 5.5 0"/><polygon class="cls-2" points="5.5 0 21.22 17.66 18.4 50 0 63.11 5.5 0"/><polygon class="cls-3" points="39.76 2.98 21.22 17.66 18.4 50 34.26 66.09 39.76 2.98"/></g></g></svg></a>
+                         <a data-bs-toggle="modal" href="#Kitchen"><svg xmlns="http://www.w3.org/2000/svg" id="kitchen_1" class="d-none d-lg-block" viewBox="0 0 39.75 66.1" width="40px" height="70px"><defs></defs><title>Clicca per vedere la cucina</title><g id="Livello_2" data-name="Livello 2"><g id="Livello_1-2" data-name="Livello 1"><rect class="cls-1" x="-11.8" y="15.85" width="63.35" height="34.39" transform="translate(54.53 16.11) rotate(94.98)"/><polygon class="cls-1" points="5.5 0 21.22 17.66 39.76 2.98 5.5 0"/><polygon class="cls-2" points="5.5 0 21.22 17.66 18.4 50 0 63.11 5.5 0"/><polygon class="cls-3" points="39.76 2.98 21.22 17.66 18.4 50 34.26 66.09 39.76 2.98"/></g></g></svg></a>
                     </div>
                 </div>
             </div>
@@ -284,7 +286,7 @@
         </div>
     </footer>
     <!-- Modal Virtual Map -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Kitchen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
