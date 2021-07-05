@@ -374,7 +374,8 @@ footer {
     transform: translate(-40%, 0); }
     .section-a-img img {
       position: absolute;
-      bottom: 0; }
+      bottom: 0;
+      max-height: 550px; }
   .section-c {
     max-width: 50%;
     margin-top: 5%;
