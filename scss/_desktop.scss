@@ -16,6 +16,11 @@
         }
     }
 
+    h1 {
+        font-size: 3.5rem;
+        color: #fff;
+    }
+
     .white-space {
         height: 100px;
     }
@@ -25,6 +30,7 @@
         
         .logo {
             transform: translateY(20px);
+            width: 150px;
         }
     }
 

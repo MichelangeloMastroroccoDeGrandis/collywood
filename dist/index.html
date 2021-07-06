@@ -6,7 +6,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- CSS -->
+    <link rel="preload" as="image" href="asset/webp/banner-mobile.webp" />
     <link rel="stylesheet" href="css/main.css" media="all">
+    
     <!-- fontAwesome -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
     <!-- AOS -->
@@ -20,7 +22,7 @@
     <header class="bg-orange">
         <nav class="navbar navbar-expand-lg navbar-dark flex-column flex-lg-row">
                 <div class="logo">
-                    <img src="./asset/png/logo.png" alt="logo collywood" width="150" class="d-block mx-auto logo">
+                    <img src="./asset/png/logo.png" alt="logo collywood" class="d-block mx-auto logo">
                 </div>
                 <!-- Toggle Mobile -->
                     
@@ -77,7 +79,11 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="banner-mobile d-block d-md-none"></div>
+        <div class="banner-mobile d-flex d-md-none">
+            <div  class="col-12 d-flex flex-column align-items-center align-self-center">
+                <h1>COLLYWOOD</h1>
+            </div>
+        </div>
         <div class="banner-wrap d-none d-md-flex">
             <div class="banner-wrap-bg"></div>
             <img src="./asset/png/banner_1.png" id="layer1" class="img-fluid" alt="">
@@ -105,14 +111,14 @@
             <div class="col-12 col-lg-6">
                 <div class="section section-a mx-4 shadow">
                     <h2 class="mx-3">Cosa è Collywood</h2>
-                    <p class="d-block d-xl-none">Collywood è il posto per stare bene insieme sui colli bolognesi! Un grande prato dove rilassarti al sole o distenderti al fresco degli alberi, senza pareti né soffitti. Ma non è solo il luogo meraviglioso che ci ospita l’unico motivo per venirci a trovare: vi proponiamo una programmazione d'intrattenimento artistica dal sapore nostrano. Consulta qui il <a href="https://www.facebook.com/pg/Collywood.Bologna/events/?ref=page_internal">programma</a>!</p>
+                    <p class="d-block d-xl-none">Collywood è lo spazio dove si sta insieme, si ascolta, si danza, si guarda, si beve e si mangia. Vieni a fare le tue cose preferite in mezzo alla natura, dalla mattina alla sera! </p>
                     <p class="d-none d-xl-block">Collywood è il posto giusto per stare bene insieme sui colli bolognesi! Troverai un grande prato dove rilassarti al sole, oppure distenderti al fresco degli alberi sull’amaca. Il locale non ha pareti né soffitti: il cielo tutt’intorno e i calanchi all’orizzonte. Ma non è solo il luogo meraviglioso che ci ospita l’unico motivo per venirci a trovare! Proponiamo una programmazione musicale dal sapore nostrano, con concerti dal vivo e dj set, un palinsesto cinematografico sotto le stelle, letture musicate, rappresentazioni teatrali e serate di ballo. Consulta qui il <a href="https://www.facebook.com/pg/Collywood.Bologna/events/?ref=page_internal">programma</a>! E se non ti basta, rilanciamo ancora: per tutta la giornata siamo aperti e iperattivi, con il nostro bar e la nostra cucina per incantevoli colazioni, pranzi sul prato e cenette romantiche al chiaro di luna. Passa a scoprirci in via dei Colli 54, hasta luego!</p>      
                     
                 </div>
             </div> 
             <div class="col-12 col-lg-4 section-a-img">
                 <img src="./asset/png/caravan.png" alt="" class="img-fluid d-block mx-auto">
-                <img src="./asset/gif/ruota.gif" alt="" class="img-fluid d-md-none ruota">
+                
             </div>     
         </div>
         <div class="white-space"></div>
@@ -124,7 +130,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section section-b">
-                    <img src="./asset/gif/ruota.gif" alt="" class="img-fluid w-50 d-none d-md-block d-lg-none mx-auto mb-4 pb-4 ruota">
+                    
                     <a href="gallery.html" class="btn btn-primary d-block d-lg-none mx-auto">visita la galleria</a>
                     <div class="map d-none d-lg-block">
                         <div class="alert alert-info d-none d-lg-block" role="alert">

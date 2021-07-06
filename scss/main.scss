@@ -54,14 +54,13 @@ $man: url('../asset/png/man.png');
     background: $man center/contain no-repeat;
 }
 
-$bg-img: url('../asset/jpg/banner-mobile.jpg');
-$bg-cucina: url('../asset/jpg/cucina.jpg');
-$bg-cucina-mobile: url('../asset/jpg/cucina-mobile.jpg');
+$bg-img: url('../asset/webp/banner-mobile.webp');
+$bg-cucina: url('../asset/webp/cucina.webp');
+$bg-cucina-mobile: url('../asset/webp/cucina-mobile.webp');
 $bg-map: url('../asset/jpg/map.jpg');
 $colly-a: url('../asset/webp/musica.webp');
 $colly-b: url('../asset/webp/cinema.webp');
 $colly-c: url('../asset/webp/teatro.webp');
-$ruota: url('../asset/gif/ruota.gif');
 
 .bg-cucina {
     position: relative;
@@ -157,7 +156,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #fff;
 }
 
@@ -202,6 +201,7 @@ h2 {
 
     .logo {
         transform: translateY(0px);
+        width: 80px;
     }
 
     &-nav {
@@ -250,7 +250,7 @@ h2 {
 
     &-mobile {
         background: $bg-img no-repeat bottom/cover;
-        height: 600px;
+        height: 400px;
     }
     
 }

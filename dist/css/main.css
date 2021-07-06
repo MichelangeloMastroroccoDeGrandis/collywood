@@ -39,7 +39,7 @@
   position: relative;
   padding-top: 5%; }
   .bg-cucina-inner {
-    background: url("../asset/jpg/cucina-mobile.jpg");
+    background: url("../asset/webp/cucina-mobile.webp");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center top;
@@ -98,7 +98,7 @@ h1, h2, h3 {
   letter-spacing: 1px; }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #fff; }
 
 h2 {
@@ -130,7 +130,8 @@ h2 {
   max-width: 2000px;
   margin: auto; }
   .navbar .logo {
-    transform: translateY(0px); }
+    transform: translateY(0px);
+    width: 80px; }
   .navbar-nav li a {
     font-size: 1rem; }
   .navbar-collapse {
@@ -160,8 +161,8 @@ h2 {
     object-position: right bottom; }
 
 .banner-mobile {
-  background: url("../asset/jpg/banner-mobile.jpg") no-repeat bottom/cover;
-  height: 600px; }
+  background: url("../asset/webp/banner-mobile.webp") no-repeat bottom/cover;
+  height: 400px; }
 
 .sidebar-social {
   display: block;
@@ -364,12 +365,16 @@ footer {
     line-height: 2; }
     p.font-small {
       font-size: 1rem; }
+  h1 {
+    font-size: 3.5rem;
+    color: #fff; }
   .white-space {
     height: 100px; }
   .navbar {
     max-height: 100px; }
     .navbar .logo {
-      transform: translateY(20px); }
+      transform: translateY(20px);
+      width: 150px; }
   .section-a-img {
     transform: translate(-40%, 0); }
     .section-a-img img {
@@ -395,7 +400,7 @@ footer {
     min-height: 800px;
     padding-top: 0; }
     .bg-cucina-inner {
-      background: url("../asset/jpg/cucina.jpg");
+      background: url("../asset/webp/cucina.webp");
       background-repeat: no-repeat;
       background-size: 100% auto;
       background-position: center top;
