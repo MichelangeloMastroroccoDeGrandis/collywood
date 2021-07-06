@@ -233,7 +233,7 @@ h2 {
     overflow: hidden; }
     .section-d .box-a {
       background-color: #F8A82D;
-      background: url("../asset/jpg/colly_a.jpeg") center/cover; }
+      background: url("../asset/webp/musica.webp") center/cover; }
       .section-d .box-a .box-text {
         position: absolute;
         top: 0;
@@ -268,7 +268,7 @@ h2 {
         transform: translateY(0); }
     .section-d .box-b {
       background-color: #a41623;
-      background: url("../asset/jpg/colly_b.jpeg") center/cover; }
+      background: url("../asset/webp/cinema.webp") center/cover; }
       .section-d .box-b .box-text {
         position: absolute;
         top: 0;
@@ -303,7 +303,7 @@ h2 {
         transform: translateY(0); }
     .section-d .box-c {
       background-color: #14213d;
-      background: url("../asset/jpg/colly_c.jpeg") center/cover; }
+      background: url("../asset/webp/teatro.webp") center/cover; }
       .section-d .box-c .box-text {
         position: absolute;
         top: 0;
@@ -399,7 +399,13 @@ footer {
       background-repeat: no-repeat;
       background-size: 100% auto;
       background-position: center top;
-      background-attachment: fixed; } }
+      background-attachment: fixed; }
+  .carousel-caption {
+    position: absolute;
+    color: #fff;
+    max-height: 100%; }
+  .carousel-control-next, .carousel-control-prev {
+    bottom: 0; } }
 
 .map {
   position: relative; }

@@ -84,4 +84,16 @@
             background-attachment: fixed;
         }
     }
+
+    //gallery
+    .carousel-caption {
+        position: absolute;
+        color: #fff;
+        max-height: 100%;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        bottom: 0;
+    }
+
 }
