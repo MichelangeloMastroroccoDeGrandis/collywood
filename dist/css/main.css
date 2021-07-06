@@ -425,7 +425,10 @@ footer {
     position: absolute; }
     .map svg#kitchen_1 {
       top: 345px;
-      left: 150px; }
+      left: 150px;
+      transition: transform .5s; }
+      .map svg#kitchen_1:hover {
+        transform: scale(1.15); }
       .map svg#kitchen_1 .cls-1 {
         fill: #ff8661; }
       .map svg#kitchen_1 .cls-2 {
@@ -443,7 +446,10 @@ footer {
         fill: #ffaa71; }
     .map svg#bar {
       top: 167px;
-      left: 222px; }
+      left: 222px;
+      transition: transform .5s; }
+      .map svg#bar:hover {
+        transform: scale(1.05) rotate(15deg); }
       .map svg#bar .cls-1 {
         fill: #7db98a; }
       .map svg#bar .cls-2 {
@@ -452,7 +458,10 @@ footer {
         fill: #94ca90; }
     .map svg#stage {
       left: 437px;
-      top: 155px; }
+      top: 155px;
+      transition: transform .5s; }
+      .map svg#stage:hover {
+        transform: scale(1.05); }
       .map svg#stage .cls-1 {
         fill: none; }
       .map svg#stage .cls-2 {
@@ -536,7 +545,10 @@ footer {
       left: 58px;
       top: 105px; }
       .map svg#panoramik .cls-1 {
-        fill: #b3b3b3; }
+        fill: #b3b3b3;
+        transition: transform .5s; }
+        .map svg#panoramik .cls-1:hover {
+          fill: #d2d2d2; }
       .map svg#panoramik .cls-2 {
         fill: #d2d2d2; }
       .map svg#panoramik .cls-3 {
@@ -571,7 +583,10 @@ footer {
         fill: #aba299; }
     .map svg#gazebo_1 {
       left: 424px;
-      top: 387px; }
+      top: 387px;
+      transition: transform .5s; }
+      .map svg#gazebo_1:hover {
+        transform: scale(1.05) rotate(45deg); }
       .map svg#gazebo_1 .cls-1 {
         isolation: isolate; }
       .map svg#gazebo_1 .cls-2 {
@@ -689,7 +704,10 @@ footer {
         opacity: 0.32; }
     .map svg#park {
       left: 795px;
-      top: 630px; }
+      top: 630px;
+      transition: transform .5s; }
+      .map svg#park:hover {
+        transform: scale(1.1); }
       .map svg#park .cls-1 {
         fill: #0083cb; }
       .map svg#park .cls-2 {
