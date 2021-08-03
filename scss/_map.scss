@@ -1,6 +1,47 @@
 .map {
     position: relative;
 
+    &-number {
+      position: absolute;
+      background: $orange;
+      color: #fff;
+      padding: .25em .5em;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      z-index: 1;
+      
+    }
+
+    &-1 {
+      top: 140px;
+      left: 115px;
+    }
+    
+    &-2 {
+      top: 150px;
+      left: 250px;
+    }
+    
+    &-3 {
+      top: 340px;
+      left: 140px;
+    }
+
+    &-4 {
+      top: 180px;
+      left: 530px;
+    }
+
+    &-5 {
+      top: 365px;
+      left: 450px;
+    }
+
+    &-6 {
+      top: 610px;
+      left: 780px;
+    }
+
     .alert-info {
       position: absolute;
       top: 25px;

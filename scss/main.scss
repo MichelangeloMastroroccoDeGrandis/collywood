@@ -522,11 +522,15 @@ h2 {
 .carousel-caption {
     position: initial;
     color: #000;
-    max-height: 300px;
+    max-height: 500px;
 }
 
 .carousel-control-next, .carousel-control-prev {
-    bottom: 50%;
+    bottom: calc(100% - 480px);
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #000; 
 }
 
 //footer 

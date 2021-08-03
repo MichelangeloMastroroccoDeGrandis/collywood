@@ -345,10 +345,13 @@ h2 {
 .carousel-caption {
   position: initial;
   color: #000;
-  max-height: 300px; }
+  max-height: 500px; }
 
 .carousel-control-next, .carousel-control-prev {
-  bottom: 50%; }
+  bottom: calc(100% - 480px); }
+
+.carousel-indicators [data-bs-target] {
+  background-color: #000; }
 
 footer {
   color: #fff; }
@@ -414,6 +417,32 @@ footer {
 
 .map {
   position: relative; }
+  .map-number {
+    position: absolute;
+    background: #F8A82D;
+    color: #fff;
+    padding: .25em .5em;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    z-index: 1; }
+  .map-1 {
+    top: 140px;
+    left: 115px; }
+  .map-2 {
+    top: 150px;
+    left: 250px; }
+  .map-3 {
+    top: 340px;
+    left: 140px; }
+  .map-4 {
+    top: 180px;
+    left: 530px; }
+  .map-5 {
+    top: 365px;
+    left: 450px; }
+  .map-6 {
+    top: 610px;
+    left: 780px; }
   .map .alert-info {
     position: absolute;
     top: 25px;
